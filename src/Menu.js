@@ -217,11 +217,11 @@ class Menu extends React.Component {
                   style,
                 ]}
               >
-                <Animated.View
+                <Animated.ScrollView
                   style={[styles.menuContainer, animationStarted && menuSize]}
                 >
                   {children}
-                </Animated.View>
+                </Animated.ScrollView>
               </Animated.View>
             </View>
           </TouchableWithoutFeedback>
@@ -240,7 +240,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: 'white',
     borderRadius: 4,
-    opacity: 0,
+		opacity: 0,
+		maxHeight: Dimensions.get("window").height * 3/4,
 
     // Shadow
     ...Platform.select({
