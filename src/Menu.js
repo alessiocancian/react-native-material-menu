@@ -254,6 +254,9 @@ const styles = StyleSheet.create({
       android: {
         elevation: 8,
       },
+      web: {
+        boxShadow: "0px 2px 4px #00000030"
+      },
     }),
   },
   menuContainer: {
