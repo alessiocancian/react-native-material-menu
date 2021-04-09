@@ -240,8 +240,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: 'white',
     borderRadius: 4,
-		opacity: 0,
-		maxHeight: Dimensions.get("window").height * 3/4,
+    opacity: 0,
+    maxHeight: Math.min(400, Dimensions.get("window").height * 3/4),
 
     // Shadow
     ...Platform.select({
